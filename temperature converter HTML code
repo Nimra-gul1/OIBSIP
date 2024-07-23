@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter Website using HTML, CSS & JavaScript</title>
+    
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="temperature-converter">
+        <div class="mobile">
+          <div>
+            <i class='bx bx-signal-4'></i>
+            <i class='bx bx-wifi'></i>
+            <i class='bx bxs-battery'></i>
+          </div>
+        </div>
+
+        <h1 class="title">Temperature Converter</h1>
+
+        <div class="result">
+          <span class="result-heading">Result (Celsius)</span>
+          <h2 class="celsius-value" id="celsius"></h2>
+        </div>
+
+        <!-- Input field -->
+        <div class="degree-type">
+          <!-- Degrees input -->
+          <div class="degree-field">
+            <label for="degree">Degrees</label>
+            <input type="number" name="degree" id="degree" />
+          </div>
+
+          <!-- Temperature type selection -->
+          <div class="temp-field">
+            <label for="temp-type">Type</label>
+            <select name="temperatures" id="temp-type" autocomplete="on">
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="kelvin">Kelvin</option>
+            </select>
+          </div>
+        </div>
+        
+        <button id="convert-btn">Convert</button>
+      </div>
+    </div>
+    
+    <!-- Script tags -->
+    <script src="code.js"></script>
+  </body>
+</html>
